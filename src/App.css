@@ -1,38 +1,103 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
 .App {
   text-align: center;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.component-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding: 1rem;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#id-input{
+  margin-top: 1rem;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #c5ccd2;
+  height: 2rem;
+  width: 100%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+
+}
+
+#pw-input{
+  margin-bottom: 1rem;
+  border-radius: 0 0 8px 8px;
+  border: 1px solid #c5ccd2;
+  height: 2rem;
+  width: 100%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+
+}
+
+#login-btn{
+  width: 100%;
+  height: 3rem;
+  border: 1px solid cornflowerblue;
+  border-radius: 8px;
+  background-color:cornflowerblue;
+  color: white;
+  font-weight: bolder;
+}
+
+.find {
+  display: flex;
+  flex-direction: column;
+}
+
+.span-text {
+
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  background-color: blue;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-logo-container {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-btn-container {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-btn {
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
 }

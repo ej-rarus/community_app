@@ -11,8 +11,8 @@ export default function LoginForm() {
                     <button id="login-btn" type='submit'> 로그인 </button>
                 </form>
                 <div className="find">
-                    <Link to={'#'}><span className="span-text">회원가입</span></Link>
-                    <Link to={'#'}><span className="span-text">비밀번호를 잊어버리셨나요?</span></Link>
+                    <Link to={'/signup'} className="custom-link"><span className="span-text">회원가입</span></Link>
+                    <Link to={'/forgotpassword'} className="custom-link"><span className="span-text">비밀번호를 잊어버리셨나요?</span></Link>
                 </div>
             </div>
         </div>

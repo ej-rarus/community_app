@@ -40,6 +40,10 @@
   padding: 1rem;
 }
 
+.main-logo{
+  cursor: pointer;
+}
+
 #login-form {
   display: flex;
   flex-direction: column;

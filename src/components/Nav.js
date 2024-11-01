@@ -2,12 +2,16 @@ import React from "react";
 import "../App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
+
 
 function Nav({ menuVisible, setMenuVisible }) {
+  const navigate = useNavigate();
+
   return (
     <div className="nav">
       <div className="main-logo-container">
-        <div className="main-logo">SF-Mark1</div>
+        <div className="main-logo" onClick={()=>navigate('/')}>SF-Mark1</div>
       </div>
       <div className="nav-btn-container">
         <div className="nav-btn">About</div>
